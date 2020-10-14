@@ -1,21 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="EUC-KR">
-
+<link rel = "stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <title>Welcome</title>
 </head>
 <body>
-	<nav class="navbar navbar-expand navbar-dark bg-dark">
-		<div class ="container">
-			<div class = "navbar=header">
-				<a class="navbar-brand" href ="./welcome.jsp">Home</a>
-			</div>
-		</div>
-	</nav>
-	
+<%@include file="menu.jsp" %>
+		
 	<%!
 		String greeting = "Welcome to Joy Mall";
 		String tagline = "Welcome to CocoMarket";
@@ -32,13 +27,15 @@
 		<div class = "text-center">
 			<h3>
 				<%=tagline%>
+				
 			</h3>
+				<%@ include file="thistime.jsp" %>			
 		</div>
 	</div>
-	
-	<footer class ="container">
-		<p>&copy;CocoMarket</p>
-	</footer>
+
+		
+	<br>
+	<%@ include file="footer.jsp" %>
 	
 </body>
 </html>
