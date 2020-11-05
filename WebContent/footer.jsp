@@ -1,1 +1,1 @@
-Copyleft &copy; joy 
+Copyleft..sorry.. &copy; joy 
