@@ -29,7 +29,7 @@
 				<%=tagline%>
 				
 			</h3>
-				<%@ include file="thistime.jsp" %>			
+				<!--  <%@ include file="thistime.jsp" %>	-->		
 		</div>
 	</div>
 
