@@ -2,12 +2,13 @@ package dto;
 
 import java.io.Serializable;
 
+@SuppressWarnings("serial")
 public class Product implements Serializable {
 	private String productId;
 	private String pname;
 	private Integer unitPrice;
 	private String description;//상품설명
-	private String manufactorer;
+	private String manufacturer;
 	private String category;
 	private long unitsInStock;//제고수
 	private String condition; //물품상태
@@ -46,11 +47,11 @@ public class Product implements Serializable {
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	public String getManufactorer() {
-		return manufactorer;
+	public String getManufacturer() {
+		return manufacturer;
 	}
-	public void setManufactorer(String manufactorer) {
-		this.manufactorer = manufactorer;
+	public void setManufacturer(String manufacturer) {
+		this.manufacturer = manufacturer;
 	}
 	public String getCategory() {
 		return category;
